@@ -7,7 +7,6 @@
 #include "vineyard.h"
 #include <stdbool.h>
 
-
 /* === START POINT === */
 void  run();
 
