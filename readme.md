@@ -17,4 +17,44 @@ gcc main.c -o vineyard && ./vineyard config.dat record.dat
 
 ```
 
+___
+## Screenshots
+
+1. Main(menu) screen
+    <br>
+    ![Main screen](screenshots/menu_screen.png)
+    <br>
+2. Insertion
+    <br>
+    ![Insertion of an applicant](screenshots/insert_first_applicant_alfredo_martins.png)
+    <br>
+    ![Insertion of another applicant](screenshots/insert_second_applicant_viktoria_bakonyi.png)
+    <br>
+3. Remove
+    <br>
+    ![Remove an applicant](screenshots/remove_nagy_gabor.png)
+    <br>
+    ![List applicants after remove Nagy Gábor](screenshots/list_after_remove_nagy_gabor.png)
+    <br>
+    ![List applicants by days after remove Nagy Gábor](screenshots/list_applicants_by_day_after_remove_nagy_gabor.png)
+    <br>
+4. List all applicants
+    <br>
+    ![List all the applicants](screenshots/list_all_apllicants.png)
+    <br>
+5. List applicants by days
+   <br>
+    ![List all the applicants](list)
+   <br>
+5. Modify
+   <br>
+    ![Modify an applicant](screenshots/modify_david_szabo.png)
+   <br>
+    ![List applicants after modify](screenshots/all_applicants_after_modify_szabo_david.png)
+   <br>
+6. Dismiss
+    <br>
+    ![Goodbye message](screenshots/dismiss_exit_the_program.png)
+    <br>
+
 > Made by MARTINS Alfredo.

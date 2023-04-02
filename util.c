@@ -101,8 +101,6 @@ add(){
 
     str_days[index] = '\0';
 
-    // printf("%s \n\n", str_days_of_work);
-
     // Get the first token
     const char s[2] = " "; // Delimiter
     char * token; // Token to get each string
@@ -117,7 +115,7 @@ add(){
     bool abort = false;
     while (token != NULL) {
         cont++;
-        printf("%s\n", token);
+        // printf("%s\n", token);
 
         if (!is_valid_day(token)) { // Checking whether or not all the days of the week are valid.
             printf("Error checking the text.\n");
@@ -210,7 +208,7 @@ modidy_applicant() {
     bool abort = false;
     while (token != NULL) {
         cont++;
-        printf("%s\n", token);
+        // printf("%s\n", token);
 
         if (!is_valid_day(token)) { // Checking whether or not all the days of the week are valid.
             printf("Error checking the text.\n");
