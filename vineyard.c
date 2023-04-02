@@ -11,15 +11,14 @@
 bool
 insert(applicant_t app){
     int file;
-    // open(FILE_NAME, O_WRONLY | O_CREAT | O_APPEND | S_IRUSR | S_IWUSR, 0644); 
 
     // 0644 => create the file with the specific permission
 
     if (access(FILE_NAME, F_OK) != 0) {
-        // file does not exist, create it
+        // File does not exist, create it
         file = open(FILE_NAME, O_WRONLY | O_CREAT | O_APPEND, S_IRUSR | S_IWUSR);
     } else {
-        // file exists, open it
+        // File exists, open it
         file = open(FILE_NAME, O_WRONLY | O_APPEND);
     }
 
@@ -42,15 +41,13 @@ insert(applicant_t app){
 bool
 modify(applicant_t app){
     int file;
-    // open(FILE_NAME, O_WRONLY | O_CREAT | O_APPEND | S_IRUSR | S_IWUSR, 0644); 
-
     // 0644 => create the file with the specific permission
 
     if (access(FILE_NAME, F_OK) != 0) {
-        // file does not exist, create it
+        // File does not exist, create it
         file = open(FILE_NAME, O_RDONLY | O_CREAT | S_IRUSR | S_IWUSR);
     } else {
-        // file exists, open it
+        // File exists, open it
         file = open(FILE_NAME, O_RDONLY | S_IRUSR | S_IWUSR);
     }
 
@@ -80,7 +77,6 @@ modify(applicant_t app){
         return false;
     }
 
-    //strcpy(applicants[index_applicant], app.days);
     applicants[index_applicant] = app;
 
     // Writing back
@@ -90,8 +86,6 @@ modify(applicant_t app){
         perror("Error opening the file.\n");
         return false;
     }    
-
-    // applicants[index_applicant] = app;
 
     for (int i = 0; i < index; ++i) {
         int write_res = write(file, &applicants[i], sizeof(applicants[i]));
@@ -187,7 +181,6 @@ list() {
     close(file);
 }
 
-
 void
 list_by_day(const char * day) {
     int file = open(FILE_NAME, O_RDONLY | S_IRUSR);
@@ -225,7 +218,6 @@ list_by_day(const char * day) {
     
     close(file);
 }
-
 
 void
 print_applicant(applicant_t app) {

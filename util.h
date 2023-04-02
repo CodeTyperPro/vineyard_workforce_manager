@@ -17,7 +17,6 @@ void  dismiss();
 void  add();
 void  remove_applicant();
 void  modidy_applicant();
-// void  remove();
 void  list_applicants();
 void  list_applicants_by_days();
 void  exit_();

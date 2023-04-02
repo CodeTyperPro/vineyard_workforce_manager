@@ -170,7 +170,7 @@ remove_applicant(){
     }
 }
 
-
+/* === MODIFY APPLICANT === */
 void
 modidy_applicant() {
     printf("\n::::::: MODIFY APPLICANT :::::::\n");
@@ -240,7 +240,6 @@ modidy_applicant() {
     }
 }
 
-
 bool
 is_valid_day(char * s) {
     int len = sizeof(DAYS_OF_THE_WEEKS)/sizeof(DAYS_OF_THE_WEEKS[0]);
@@ -250,7 +249,6 @@ is_valid_day(char * s) {
         }
     } return false;
 }
-
 
 /* === LIST ALL APPLICANTS === */
 void  
