@@ -42,10 +42,6 @@ ___
     <br>
     ![List all the applicants](screenshots/list_all_apllicants.png)
     <br>
-5. List applicants by days
-   <br>
-    ![List all the applicants](list)
-   <br>
 5. Modify
    <br>
     ![Modify an applicant](screenshots/modify_david_szabo.png)
