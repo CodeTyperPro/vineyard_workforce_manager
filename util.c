@@ -181,6 +181,16 @@ modidy_applicant() {
     }
 
     str_name[index] = '\0';
+
+    
+    printf("Enter new applicant's (maximum of %d digits or characters): ", MAX_LEN - 2);
+    char str_new_name[MAX_LEN];
+    index = 0;
+    while (index < MAX_LEN - 1 && ((c = getchar()) != '\n')) {
+        str_new_name[index++] = c;
+    }
+
+    str_new_name[index] = '\0';
     
     printf("Enter the days you would like to work: ");
 
@@ -202,7 +212,7 @@ modidy_applicant() {
     int cont = 0;
 
     applicant_t ap;
-    strcpy(ap.name, str_name);
+    strcpy(ap.name, str_new_name);
 
     // Walk through other tokens
     bool abort = false;
@@ -227,7 +237,7 @@ modidy_applicant() {
 
     ap.choices = cont;
 
-    if(!modify(ap) || abort) {
+    if(!modify(str_name, ap) || abort) {
         if (abort) {
             printf("Sorry :(. This day (\"%s \") is already full.", token);
         } else {

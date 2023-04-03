@@ -19,7 +19,7 @@ typedef struct applicant {
 } applicant_t;
 
 bool        insert(applicant_t app);
-bool        modify(applicant_t app);
+bool        modify(char * str_name, applicant_t app);
 bool        remove_(char str[]);
 void        list();
 void        list_by_day(const char * day);

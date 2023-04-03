@@ -44,9 +44,13 @@ ___
     <br>
 5. Modify
    <br>
-    ![Modify an applicant](screenshots/modify_david_szabo.png)
+    ![List applicants before modify](screenshots/all_applicants_by_days_before_modify_nikovits.png)
    <br>
-    ![List applicants after modify](screenshots/all_applicants_after_modify_szabo_david.png)
+    ![Modify an applicant](screenshots/modify_nikovits.png)
+   <br>
+    ![List applicants after modify](screenshots/all_applicants_after_modify_nikovits.png)
+   <br>
+    ![List applicants by days after modify](screenshots/all_applicants_by_days_before_modify_nikovits.png)
    <br>
 6. Dismiss
     <br>

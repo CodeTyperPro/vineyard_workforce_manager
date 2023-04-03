@@ -39,7 +39,7 @@ insert(applicant_t app){
 }
 
 bool
-modify(applicant_t app){
+modify(char * str_name, applicant_t app){
     int file;
     // 0644 => create the file with the specific permission
 
@@ -63,7 +63,7 @@ modify(applicant_t app){
     while (index < MAX_NUMBER_APPLICANTS && read(file, &app_cur, sizeof(applicant_t))) {
         applicants[index] = app_cur;
 
-        if (strcmp(app_cur.name, app.name) == 0) { // Found the applicant to be modified
+        if (strcmp(app_cur.name, str_name) == 0) { // Found the applicant to be modified
             index_applicant = index;
         }
 
